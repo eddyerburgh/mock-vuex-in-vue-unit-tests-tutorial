@@ -7,7 +7,6 @@ import Actions from '../../../src/components/Getters';
 avoriaz.use(Vuex);
 
 describe('Getters.vue', () => {
-  let state;
   let getters;
   let store;
 
