@@ -1,16 +1,7 @@
 <template>
   <div class="text-align-center">
-    <input
-      id="action-input"
-      type="text"
-      @input="actionInputIfTrue"
-    />
-    <button
-      id="action-click"
-      @click="actionClick()"
-    >
-      Click
-    </button>
+    <input type="text" @input="actionInputIfTrue" />
+    <button @click="actionClick()">Click</button>
   </div>
 </template>
 
