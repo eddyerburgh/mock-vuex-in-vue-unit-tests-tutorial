@@ -13,15 +13,11 @@ describe('Getters.vue', () => {
 
   beforeEach(() => {
     getters = {
-      clicks: state => state.clicks,
-      inputValue: state => state.inputValue,
+      clicks: () => 2,
+      inputValue: () => 'input',
     };
-    state = {
-      clicks: 2,
-      inputValue: 'input',
-    };
+
     store = new Vuex.Store({
-      state,
       getters,
     });
   });
@@ -29,12 +25,12 @@ describe('Getters.vue', () => {
   it('Renders state.inputValue in first p tag', () => {
     const wrapper = mount(Actions, { store });
     const p = wrapper.find('p')[0];
-    expect(p.text()).to.equal(state.inputValue);
+    expect(p.text()).to.equal(getters.inputValue());
   });
 
   it('Renders state.clicks in second p tag', () => {
     const wrapper = mount(Actions, { store });
     const p = wrapper.find('p')[1];
-    expect(p.text()).to.equal(state.clicks.toString());
+    expect(p.text()).to.equal(getters.clicks().toString());
   });
 });
