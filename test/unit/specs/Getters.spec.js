@@ -26,13 +26,13 @@ describe('Getters.vue', () => {
     });
   });
 
-  it('Renders state.inputValue in first p ta', () => {
+  it('Renders state.inputValue in first p tag', () => {
     const wrapper = mount(Actions, { store });
     const p = wrapper.find('p')[0];
     expect(p.text()).to.equal(state.inputValue);
   });
 
-  it('Renders state.clicks in second p ta', () => {
+  it('Renders state.clicks in second p tag', () => {
     const wrapper = mount(Actions, { store });
     const p = wrapper.find('p')[1];
     expect(p.text()).to.equal(state.clicks.toString());
