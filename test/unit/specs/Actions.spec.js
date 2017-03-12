@@ -7,7 +7,7 @@ import Actions from '../../../src/components/Actions';
 
 avoriaz.use(Vuex);
 
-describe('GeneratePalette.vue', () => {
+describe('Actions.vue', () => {
   let actions;
   let store;
 
