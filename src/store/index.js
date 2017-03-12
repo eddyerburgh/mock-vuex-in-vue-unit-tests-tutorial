@@ -1,13 +1,19 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
+import module from './module';
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
+  modules: {
+    module,
+  },
+
   state: {
     clicks: 0,
     inputValue: null,
   },
+
   mutations: {
     INCREMENT_ACTION_CLICKS(state) {
       state.clicks++;
@@ -16,6 +22,7 @@ export default new Vuex.Store({
       state.inputValue = inputValue;
     },
   },
+
   actions: {
     actionClick({ commit }) {
       commit('INCREMENT_ACTION_CLICKS');
@@ -24,6 +31,7 @@ export default new Vuex.Store({
       commit('UPDATE_INPUT_VALUE', inputValue);
     },
   },
+
   getters: {
     clicks: state => state.clicks,
     inputValue: state => state.inputValue,
