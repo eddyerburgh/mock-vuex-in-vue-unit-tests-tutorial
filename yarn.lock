@@ -219,11 +219,10 @@ autoprefixer@^6.3.1, autoprefixer@^6.7.2:
     postcss "^5.2.15"
     postcss-value-parser "^3.2.3"
 
-avoriaz@^1.8.3:
-  version "1.8.3"
-  resolved "https://registry.yarnpkg.com/avoriaz/-/avoriaz-1.8.3.tgz#31a2ac74e6352229f29b46bf4a2c1b6fd9cc10f3"
+avoriaz@^1.12.1:
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/avoriaz/-/avoriaz-1.12.1.tgz#3c46fba10ec4dcbb5d19a8bac8fae0aa223df886"
   dependencies:
-    lodash "^4.17.4"
     vue "^2.2.1"
 
 aws-sign2@~0.6.0:
