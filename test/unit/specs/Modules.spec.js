@@ -1,4 +1,5 @@
-import avoriaz, { mount } from 'avoriaz';
+import { mount } from 'avoriaz';
+import Vue from 'vue';
 import sinon from 'sinon';
 import { expect } from 'chai';
 import Vuex from 'vuex';
@@ -6,7 +7,7 @@ import 'babel-polyfill';
 import Modules from '../../../src/components/Modules';
 import module from '../../../src/store/module';
 
-avoriaz.use(Vuex);
+Vue.use(Vuex);
 
 describe('Modules.vue', () => {
   let actions;

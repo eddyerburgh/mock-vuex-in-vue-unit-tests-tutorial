@@ -1,10 +1,11 @@
 import 'babel-polyfill';
-import avoriaz, { mount } from 'avoriaz';
+import Vue from 'vue';
+import { mount } from 'avoriaz';
 import { expect } from 'chai';
 import Vuex from 'vuex';
 import Actions from '../../../src/components/Getters';
 
-avoriaz.use(Vuex);
+Vue.use(Vuex);
 
 describe('Getters.vue', () => {
   let getters;
