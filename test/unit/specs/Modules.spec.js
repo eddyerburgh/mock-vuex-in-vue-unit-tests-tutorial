@@ -35,7 +35,7 @@ describe('Modules.vue', () => {
   it('calls store action moduleActionClick when button is clicked', () => {
     const wrapper = mount(Modules, { store });
     const button = wrapper.find('button')[0];
-    button.simulate('click');
+    button.dispatch('click');
     expect(actions.moduleActionClick.calledOnce).to.equal(true);
   });
 

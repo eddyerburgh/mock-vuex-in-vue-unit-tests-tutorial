@@ -27,7 +27,7 @@ describe('Actions.vue', () => {
     const wrapper = mount(Actions, { store });
     const input = wrapper.find('input')[0];
     input.element.value = 'input';
-    input.simulate('input');
+    input.dispatch('input');
     expect(actions.actionInput.calledOnce).to.equal(true);
   });
 
@@ -35,13 +35,13 @@ describe('Actions.vue', () => {
     const wrapper = mount(Actions, { store });
     const input = wrapper.find('input')[0];
     input.element.value = 'not input';
-    input.simulate('input');
+    input.dispatch('input');
     expect(actions.actionInput.calledOnce).to.equal(false);
   });
 
   it('calls store action actionClick when button is clicked', () => {
     const wrapper = mount(Actions, { store });
-    wrapper.find('button')[0].simulate('click');
+    wrapper.find('button')[0].dispatch('click');
     expect(actions.actionClick.calledOnce).to.equal(true);
   });
 });
