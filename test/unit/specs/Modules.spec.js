@@ -26,16 +26,20 @@ describe('Modules.vue', () => {
     };
 
     store = new Vuex.Store({
-      state,
-      actions,
-      getters: module.getters,
+      modules: {
+        module: {
+          state,
+          actions,
+          getters: module.getters,
+        },
+      },
     });
   });
 
   it('calls store action moduleActionClick when button is clicked', () => {
     const wrapper = mount(Modules, { store });
     const button = wrapper.find('button')[0];
-    button.dispatch('click');
+    button.trigger('click');
     expect(actions.moduleActionClick.calledOnce).to.equal(true);
   });
 

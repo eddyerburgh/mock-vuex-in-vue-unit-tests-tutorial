@@ -27,7 +27,7 @@ describe('Actions.vue', () => {
     const wrapper = mount(Actions, { store });
     const input = wrapper.find('input')[0];
     input.element.value = 'input';
-    input.dispatch('input');
+    input.trigger('input');
     expect(actions.actionInput.calledOnce).to.equal(true);
   });
 
@@ -35,7 +35,7 @@ describe('Actions.vue', () => {
     const wrapper = mount(Actions, { store });
     const input = wrapper.find('input')[0];
     input.element.value = 'not input';
-    input.dispatch('input');
+    input.trigger('input');
     expect(actions.actionInput.calledOnce).to.equal(false);
   });
 

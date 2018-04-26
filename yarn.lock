@@ -219,11 +219,11 @@ autoprefixer@^6.3.1, autoprefixer@^6.7.2:
     postcss "^5.2.15"
     postcss-value-parser "^3.2.3"
 
-avoriaz@^1.12.1:
-  version "1.12.1"
-  resolved "https://registry.yarnpkg.com/avoriaz/-/avoriaz-1.12.1.tgz#3c46fba10ec4dcbb5d19a8bac8fae0aa223df886"
+avoriaz@^1.14.0:
+  version "1.16.0"
+  resolved "https://registry.yarnpkg.com/avoriaz/-/avoriaz-1.16.0.tgz#05d6ac564a31955555d22f26907acb64cc12e3e5"
   dependencies:
-    vue "^2.2.1"
+    vue-add-globals "^1.0.1"
 
 aws-sign2@~0.6.0:
   version "0.6.0"
@@ -5391,6 +5391,10 @@ void-elements@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-2.0.1.tgz#c066afb582bb1cb4128d60ea92392e94d5e9dbec"
 
+vue-add-globals@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/vue-add-globals/-/vue-add-globals-1.0.1.tgz#151f241426e70cbc790a1f31bb0f4435d7575efc"
+
 vue-hot-reload-api@^2.0.11:
   version "2.0.11"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.0.11.tgz#bf26374fb73366ce03f799e65ef5dfd0e28a1568"
@@ -5430,7 +5434,7 @@ vue-template-es2015-compiler@^1.2.2:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.5.1.tgz#0c36cc57aa3a9ec13e846342cb14a72fcac8bd93"
 
-vue@^2.2.1, vue@^2.2.2:
+vue@^2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.2.2.tgz#17ed34028a6ab4de855738a1d7beabdf409ee23f"
 
